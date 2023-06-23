@@ -1,0 +1,52 @@
+
+.Institutename{
+  list-style: none;
+ position: absolute;
+ top:20px;
+ left:130px;
+}
+.name{
+  display: flex;
+}
+.navbar{
+  height: 35px;
+  width: 100%;
+  position: absolute;
+  top:140px;
+  display: flex;
+ background-color:rgb(111,111,111);
+  filter: opacity(0.8);
+}
+.nav1{
+  position: absolute;
+  top:-33px;
+  list-style: none;
+  display: flex;
+margin: 20px;
+}
+.nav2{
+margin: 20px;
+
+}
+.nav2 a:link{
+  text-decoration: none;
+  color: white;
+}
+.nav2 a:visited{
+  color: white;
+}
+.nav2 a:hover{
+  background-color: rgb(246, 246, 247);
+  color: black;
+  padding: 5px;
+  border-radius: 15%;
+  scale:calc(1.5);
+}
+#mail1:hover{
+ background-color: rgb(246, 246, 247);
+  color: black;
+  padding-left: 7px;
+  padding-right: 7px;
+  border-radius: 15%;
+
+}
