@@ -4,7 +4,10 @@
 //import homeimg from './images/homeimg.png';
 import './App.css';
 import Navbar from './components/Navbar';
-import sidecomp from './components/sidecomp'
+import About from './components/About';
+import FAQ from './components/FAQ';
+import Footer from './components/Footer';
+import Membersblock from './components/Membersblock';
 function App() {
   return (
     <div className="App">
@@ -20,9 +23,13 @@ function App() {
 <li ><b>Indian Institute Of</b></li>
 <li><b>Technology Indore</b></li>
       </ul>
-      <p style={{position:'absolute',left:450,top:0,padding:0,fontSize:40,fontWeight:500}}>Counselling Services</p>
+      <p style={{position:'absolute',left:450,top:50,padding:0,fontSize:40,fontWeight:500}}>Counselling Services</p>
       </div>
       <Navbar/>
+      <About/>
+<Membersblock/>
+      <FAQ/>
+      <Footer/>
     </div>
   );
 }
