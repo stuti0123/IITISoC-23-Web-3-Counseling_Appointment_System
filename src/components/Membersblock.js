@@ -1,7 +1,7 @@
 import React from 'react'
 function Membersblock(){
     return(
-      <div className='block1'>
+      <div className='block1' id='team'>
         <div className='container1'>
         <div class="about-line"></div>
             <p style={{textAlign:'center',fontSize:50}}>Our Team</p>

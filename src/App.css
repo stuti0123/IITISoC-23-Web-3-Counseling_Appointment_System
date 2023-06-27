@@ -2,6 +2,7 @@
   margin: 0;
   padding:0;
   box-sizing: border-box;
+  text-decoration: none;
 }
  .Institutename{
   list-style: none;
@@ -28,7 +29,7 @@
 .containerhome {
   mask-position: 0cap ;
   width: fit-content;
-  height: 140vh;
+  
 }
 
 .text-container {
@@ -80,6 +81,7 @@
 .book-now-button {
   background-color: #000;
   color: #fff;
+  border-radius: 5px;
   border: none;
   padding: 10px 20px;
   font-family: Arial, sans-serif;
@@ -90,6 +92,15 @@
   top: 50%;
   left: 80px;
   transform: translateY(-800%);
+}
+.book-now-button:hover{
+  background-color: #383838;
+}
+.login-button{
+  margin-left: 150px;
+  padding: 12px;
+  background-color: #000;
+  color: white;
 }
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
@@ -177,8 +188,14 @@ margin: 20px;
   margin: 0 auto 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-
-
+.about-line1{
+  width: 7cm;
+  height: 5px;
+  background-color: #333;
+  margin: 0 auto 20px;
+  margin-top: -50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
 .container{
   color: white;
     max-width: 1190;
@@ -230,6 +247,7 @@ margin: 20px;
     height:40px;
     width:40px;
     background-color: rgba(255,255,255);
+    color:#011ec0;
     margin:0 10px 10px 0;
     text-align: center;
    line-height: 40px;
@@ -240,6 +258,11 @@ margin: 20px;
   .footer-col .social-links a:hover{
   color:rgb(255, 255, 255);
   background-color: rgb(15, 2, 2);
+  }
+  .footer-col ul a:hover{
+    padding-left: 20px;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
   }
   @media(max-width:767px){
     .footer-col{
@@ -302,7 +325,7 @@ margin: 20px;
   }
   .AboutUs{
     margin: 0px;
-    padding: 30px;
+    padding: 0px;
     text-align: center;
   }
   .row-3-col-1{
