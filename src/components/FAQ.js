@@ -2,6 +2,7 @@ import React from 'react'
 function FAQ(){
     return(
 <div className='faq'>
+<div class="about-line"></div>
     <p style={{textAlign:'center',fontSize:50}}>FAQ's</p>
     <table>
         <tr>

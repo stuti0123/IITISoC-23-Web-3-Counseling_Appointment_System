@@ -3,6 +3,7 @@
 //import c2 from './images/c2.jpeg'
 //import homeimg from './images/homeimg.png';
 import './App.css';
+import Homepg from './components/Homepg';
 import Navbar from './components/Navbar';
 import About from './components/About';
 import FAQ from './components/FAQ';
@@ -23,9 +24,17 @@ function App() {
 <li ><b>Indian Institute Of</b></li>
 <li><b>Technology Indore</b></li>
       </ul>
-      <p style={{position:'absolute',left:450,top:50,padding:0,fontSize:40,fontWeight:500}}>Counselling Services</p>
+      <div class="button-container">
+  <div class="cloud">
+    <p >Book an appointment and talk with your counsellor now!</p>
+  </div>
+  <button class="book-now-button">Book Now</button>
+</div>
+
+      <p style={{position:'absolute',left:450,top:50,padding:0,fontSize:55,fontWeight:500}}>Counselling Services</p>
       </div>
       <Navbar/>
+      <Homepg/>
       <About/>
 <Membersblock/>
       <FAQ/>

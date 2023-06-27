@@ -1,26 +1,142 @@
 *{
-  margin:0;
+  margin: 0;
   padding:0;
   box-sizing: border-box;
 }
-.Institutename{
+ .Institutename{
   list-style: none;
  position: absolute;
  top:50px;
  left:170px;
+  color: #010d52;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
+
+.heading {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  word-break: break-word;
+}
+
+.containerhome {
+  mask-position: 0cap ;
+  width: fit-content;
+  height: 140vh;
+}
+
+.text-container {
+  position: absolute;
+  top: 450px;
+  right: 0;
+  transform: translate(-50%, -50%);
+  
+  padding: 20px; 
+  max-width: 45%;
+}
+
+.text-container p {
+  
+  font-family: Inter;
+  font-size: 20px;
+  font-display: centre;
+  font-weight: 400;
+  color: #333;
+  margin: 0;
+  text-align: right;
+  position: relative;
+  padding: 5px 10px;
+}
+
+.button-container {
+  position: relative;
+  display: inline-block;
+}
+
+.cloud {
+  position: absolute;
+  top: -500px;
+  text-align: left;
+  left: 80px;
+  background-color:lightblue;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.cloud p {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+.book-now-button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative; 
+  top: 50%;
+  left: 80px;
+  transform: translateY(-800%);
+}
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .button-container {
+    display: block;
+    text-align: center;
+  }
+
+  .cloud {
+    position: absolute;
+    margin-bottom: 20px;
+  }
+
+  .book-now-button {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+
+
 .name{
-  display: flex;
+  display:flex;
 }
 .navbar{
-  height: 35px;
+  height: 40px;
   width: 100%;
   position: absolute;
-  top:140px;
+  top:170px;
   display: flex;
  background-color:rgb(111,111,111);
   filter: opacity(0.8);
 }
+@media (max-width: 768px) {
+  .navbar, .nav1 {
+    /* Adjustments for smaller screens */
+height: 60px;
+position: absolute;
+top: 200px;
+max-width: fit-content;
+background-color:rgb(111,111,111);
+align-items: center;
+  filter: opacity(0.8);
+  }
+  
+}
+
 .nav1{
   position: absolute;
   top:-33px;
@@ -52,8 +168,17 @@ margin: 20px;
   padding-left: 7px;
   padding-right: 7px;
   border-radius: 15%;
-
 }
+
+.about-line {
+  width: 7cm;
+  height: 5px;
+  background-color: #333;
+  margin: 0 auto 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
 .container{
   color: white;
     max-width: 1190;
