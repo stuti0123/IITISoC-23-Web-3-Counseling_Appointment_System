@@ -12,29 +12,8 @@ import Membersblock from './components/Membersblock';
 function App() {
   return (
     <div className="App">
-    <img style={{opacity:0.6,width:1263}} src='./images/c11.jpg' alt=""/>
-      <div className='name'>
-      <img style={{
-        position:'absolute',
-        top:1,
-        height:150,
-        width:150
-      }} src='./images/logo2.png' alt=""/>
-      <ul className='Institutename'>
-<li ><b>Indian Institute Of</b></li>
-<li><b>Technology Indore</b></li>
-      </ul>
-      <div class="button-container">
-  <div class="cloud">
-    <p >Book an appointment and talk with your counsellor now!</p>
-  </div>
-  <button class="book-now-button">Book Now</button>
-</div>
-
-      <p style={{position:'absolute',left:450,top:50,padding:0,fontSize:55,fontWeight:500}}>Counselling Services</p>
-      </div>
-      <Navbar/>
       <Homepg/>
+      <Navbar/>
       <About/>
 <Membersblock/>
       <FAQ/>

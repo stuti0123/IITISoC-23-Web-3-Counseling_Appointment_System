@@ -1,13 +1,13 @@
 import React from 'react'
 function Footer(){
     return(
-<footer className='footer'>
+<footer className='footer'id='contact-details'>
     <div className='container'>
         <div class='row'>
             <div className='footer-col'>
                 <h4>Counselling Services</h4>
                 <ul>
-                  <a href='https://iiti.ac.in/page/counselling-cell'> Counselling Cell IITI </a>
+                  <a className="counselling-link" style={{color:'white',fontWeight:500}} href='https://iiti.ac.in/page/counselling-cell'> Counselling Cell IITI </a>
                 </ul>
             </div>
             <div className='footer-col'>
@@ -25,7 +25,7 @@ function Footer(){
             <div className='footer-col'>
                 <h4>Facilities</h4>
                 <ul>
-                    <li><a href="/https://academic.iiti.ac.in/"> Academics </a></li>
+                    <li><a href="https://academic.iiti.ac.in/"> Academics </a></li>
                     <li><a href="http://iiti.ac.in/page/campus-facilities"> Campus Facilities</a></li>
                     <li><a href="http://hostel.iiti.ac.in/"> Hostel </a></li>
                     <li><a href="https://www.iiti.ac.in/public/storage/dining/Central%20Dining%20Facility%20Updated.pdf"> Central Dining Facility </a></li>

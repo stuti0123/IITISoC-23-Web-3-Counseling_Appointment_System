@@ -1,7 +1,7 @@
 import React from 'react'
 function Membersblock(){
     return(
-      <div className='block1'>
+      <div className='block1' id='team'>
         <div className='container1'>
         <div class="about-line"></div>
             <p style={{textAlign:'center',fontSize:50}}>Our Team</p>
@@ -50,12 +50,11 @@ Phone (Office): +91-731-660-3333 (Ext. No. 5551)
               </div>
              </div> <div className='row-3-col-3'>
                 <img src='./images/shubham.png' alt=""/>
-                <p style={{height:118, width:250,position:'relative',left:-5,paddingTop:10}}>Mr. Shubham Alte
+                <p style={{height:118, width:250,position:'relative',left:-15,paddingTop:10}}>Mr. Shubham Alte
                 Student Coordinator for PG Students
                 email: msc2203141012[at] iiti.ac.in
                 </p>
               </div>
-  
               <a href="/#"><botton className="fac-button-1">Faculty Counselling Coordinators</botton></a>
   
   </div>   </div>
