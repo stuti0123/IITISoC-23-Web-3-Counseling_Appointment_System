@@ -15,7 +15,7 @@ function App() {
       <Homepg/>
       <Navbar/>
       <About/>
-<Membersblock/>
+      <Membersblock/>
       <FAQ/>
       <Footer/>
     </div>

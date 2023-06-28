@@ -4,6 +4,7 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+
  .Institutename{
   list-style: none;
  position: absolute;
@@ -25,19 +26,11 @@
   max-width: 100%;
   word-break: break-word;
 }
-
-.containerhome {
-  mask-position: 0cap ;
-  width: fit-content;
-  
-}
-
 .text-container {
   position: absolute;
   top: 450px;
   right: 0;
   transform: translate(-50%, -50%);
-  
   padding: 20px; 
   max-width: 45%;
 }
@@ -62,9 +55,9 @@
 
 .cloud {
   position: absolute;
-  top: -480px;
+  top: -380px;
   text-align: center;
-  left: 80px;
+  left: 105px;
   background-color:lightblue;
   padding: 10px;
   border-radius: 10px;
@@ -90,8 +83,8 @@
   font-weight: bold;
   cursor: pointer;
   position: relative; 
-  top: -300px;
-  left: 80px;
+  top: -200px;
+  left: 90px;
   transform: translateY(-100%);
 }
 .motion-button:hover{
@@ -99,8 +92,8 @@
 }
 .login-button{
   position: relative;
-  top: 50px;
-  margin-left: 200px;
+  top: 35px;
+  margin-left: 215px;
   padding: 12px;
   background-color: #000;
   color: white;
@@ -254,6 +247,7 @@ margin: 20px;
   .footer{
     padding: 70px 0;
     background-color: rgba(52, 52, 52,0.8);
+   
   
   }
   ul{
@@ -269,7 +263,7 @@ margin: 20px;
   }
   .footer-col h4{
     font-size: 19px;
-    color:rgb(217, 217, 254);
+    color:rgb(188, 218, 253);
     text-transform: capitalize;
     margin-bottom: 25px;
     font-weight: 500;
@@ -309,6 +303,9 @@ margin: 20px;
   .footer-col .social-links a:hover{
   color:rgb(255, 255, 255);
   background-color: rgb(15, 2, 2);
+  height: 43px;
+  width:43px;
+  line-height:42px;
   }
   .footer-col ul a:hover{
     padding-left: 20px;
@@ -329,7 +326,7 @@ margin: 20px;
   .block1 {
     max-width:1190;
     text-align: center;
-    background-color: rgb(205, 227, 250);
+    background-color: rgb(222, 238, 255);
     max-height:1200px;
   }
   .block1 img{

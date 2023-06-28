@@ -6,7 +6,7 @@ function Footer(){
         <div class='row'>
             <div className='footer-col'>
                 <h4>Contact Us:</h4>
-                <ul>
+                <ul style={{fontWeight:500}}>
                 Postal Address:<br/>
 West wing, 2nd Floor, Abhinandan Bhawan,<br/>
 Indian Institute of Technology IndoreKhandwa Road,<br/>
