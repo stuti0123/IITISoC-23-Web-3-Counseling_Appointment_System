@@ -4,7 +4,7 @@ function Homepg() {
   return (
   
     <div className="containerhome" id='home'>
-       <img style={{opacity:0.6,height:800,width:1263}} src='./images/c11.jpg' alt=""/>
+       <img style={{opacity:0.6,height:800,width:1540}} src='./images/c11.jpg' alt=""/>
       <div className='name'>
       <img style={{
         position:'absolute',
