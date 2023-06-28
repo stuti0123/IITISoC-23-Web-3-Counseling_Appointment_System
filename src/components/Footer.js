@@ -5,21 +5,28 @@ function Footer(){
     <div className='container'>
         <div class='row'>
             <div className='footer-col'>
-                <h4>Counselling Services</h4>
+                <h4>Contact Us:</h4>
                 <ul>
-                  <a className="counselling-link" style={{color:'white',fontWeight:500}} href='https://iiti.ac.in/page/counselling-cell'> Counselling Cell IITI </a>
+                Postal Address:<br/>
+West wing, 2nd Floor, Abhinandan Bhawan,<br/>
+Indian Institute of Technology IndoreKhandwa Road,<br/>
+Simrol, Indore, Pin code 453 552,<br/>
+Madhya Pradesh, India<br/>
+Phone: +91 731- 660 (Ext. No. 3425)<br/>
+Email: counsellor@iiti.ac.in<br/>
                 </ul>
             </div>
             <div className='footer-col'>
                 <h4>Quick Links</h4>
                 <ul>
                     <li><a href="https://www.iiti.ac.in/">IITI Home</a></li>
-                    
                     <li><a href="https://www.iiti.ac.in/page/nirf-2023">NIRF</a></li>
                     <li><a href="https://mail.google.com/a/iiti.ac.in">Webmail</a></li>
+                 
                     <li><a href="https://www.iiti.ac.in/public/storage/directory/Telephone%20directory%20(21.06.2023).pdf">Directory</a></li>
                     <li><a href="http://people.iiti.ac.in/~medical/">Health Centre</a></li>
                     <li><a href="/http://ebsb.iiti.ac.in/">Social Works</a></li>
+                    <li><a href='https://iiti.ac.in/page/counselling-cell'> Counselling Cell </a></li>
                 </ul>
             </div>
             <div className='footer-col'>

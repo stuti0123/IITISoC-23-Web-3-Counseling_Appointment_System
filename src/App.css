@@ -262,9 +262,9 @@ margin: 20px;
   .row{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
   .footer-col{
-    width: 20%;
     padding:0 15px;
   }
   .footer-col h4{
