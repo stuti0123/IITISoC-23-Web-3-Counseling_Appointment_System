@@ -4,7 +4,15 @@ function Homepg() {
   return (
   
     <div className="containerhome" id='home'>
-       <img style={{opacity:0.6,height:800,width:1263}} src='./images/c11.jpg' alt=""/>
+       <div className="home-content" style={{
+        backgroundImage: `url('./images/c11.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'centre',
+        backgroundRepeat: 'no-repeat',
+        minHeight:'100vh',
+        opacity:0.6
+       }}></div>
+
       <div className='name'>
       <img style={{
         position:'absolute',

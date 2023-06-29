@@ -5,6 +5,7 @@
 import './App.css';
 import Homepg from './components/Homepg';
 import Navbar from './components/Navbar';
+import BackToTopButton from './components/BackToTopButton';
 import About from './components/About';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
@@ -13,6 +14,7 @@ function App() {
   return (
     <div className="App">
       <Homepg/>
+      <BackToTopButton/>
       <Navbar/>
       <About/>
       <Membersblock/>
