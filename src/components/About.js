@@ -1,9 +1,9 @@
 import React from 'react';
 function About(){
     return(
-<div className='AboutUs' id='about'>
+<div className='AboutUs' id='about' >
 <div class="about-line1"></div>
-    <p style={{textAlign:'center',fontSize:50}}>About Us</p>
+    <p style={{textAlign:'center',fontSize:50}} data-aos="slide-right" data-aos-duration="6000">About Us</p>
     <p style={{paddingTop:40,paddingBottom:30}}>If you have any concern related to academics or something social, psychological ,you are free to reach out to us.
 Counsellor, through the counselling process, listens to a student’s concerns with empathy and responds in a non judgemental way. The process is confidential except in a condition where disclosure is necessary to protects the student, another person or abide by the institute’s policy.</p> 
 <p>Some of the common concerns of the young people today are-</p>

@@ -117,7 +117,7 @@ import React, {useState} from 'react'
       return (
       <div className="our-team" id='team'>
         <div class="about-line"></div>
-    <p style={{textAlign:'center',fontSize:50}}>Our Team</p>
+    <p style={{textAlign:'center',fontSize:50}} data-aos="slide-left" data-aos-duration="6000">Our Team</p>
     <br /> <br/>
         <div className="counsellors">
           

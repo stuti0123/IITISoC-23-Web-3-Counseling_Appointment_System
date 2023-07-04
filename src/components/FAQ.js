@@ -3,7 +3,7 @@ function FAQ(){
     return(
 <div className='faq'id='FAQ'>
 <div class="about-line"></div>
-    <p style={{textAlign:'center',fontSize:50}}>FAQ's</p>
+    <p data-aos="slide-right" data-aos-duration="6000" style={{textAlign:'center',fontSize:50}}>FAQ's</p>
     <table>
         <tr>
         <td className='tb-col-1'><img src='./images/faqimg1.png' alt=""/></td>
