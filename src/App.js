@@ -1,25 +1,26 @@
-//import logo from './images/logo.png';
-//import backgroundimg from './images/backgroungimg.jpg'
-//import c2 from './images/c2.jpeg'
-//import homeimg from './images/homeimg.png';
 import './App.css';
+import Heading from './components/Heading'
 import Homepg from './components/Homepg';
 import Navbar from './components/Navbar';
 import BackToTopButton from './components/BackToTopButton';
-import About from './components/About';
-import FAQ from './components/FAQ';
 import Footer from './components/Footer';
-import Membersblock from './components/Membersblock';
+import { BrowserRouter,React,Reacts, Route, Routes} from 'react-router-dom';
+import Activities from './components/Activities';
+import Information from './components/Information';
 function App() {
   return (
     <div className="App">
-      <Homepg/>
-      <BackToTopButton/>
-      <Navbar/>
-      <About/>
-      <Membersblock/>
-      <FAQ/>
-      <Footer/>
+        <BackToTopButton/>
+        <Heading/>
+        <BrowserRouter>
+        <Navbar/>
+        <Routes>
+            <Route exact path="/" element={ <Homepg/>}/>
+            <Route  exact path="/activities" element={ <Activities/>}/>
+            <Route  exact path="/information" element={ <Information/>}/>
+        </Routes>
+        </BrowserRouter>
+        <Footer/>
     </div>
   );
 }

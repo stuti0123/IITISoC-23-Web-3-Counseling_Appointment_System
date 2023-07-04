@@ -6,15 +6,18 @@
 }
 
  .Institutename{
+  text-align: center;
   list-style: none;
  position: absolute;
+ font-size: 18px;
+ font-weight: 800;
  top:50px;
  left:170px;
   color: #010d52;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
-.heading {
+.heading-counselling-services {
   font-family: "Poppins", Arial, sans-serif;
   font-size: 2.5em;
   font-weight: bold;
@@ -273,8 +276,6 @@ h3 {
 }
 
 
-
-
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
   .button-container {
@@ -306,6 +307,7 @@ h3 {
   display: flex;
  background-color:rgb(58, 58, 58);
   filter: opacity(0.8);
+  z-index: 2;
 }
 @media (max-width: 768px) {
   .navbar, .nav1 {
@@ -373,10 +375,18 @@ margin: 20px;
   color: white;
     max-width: 1190;
   }
+.activities{
+
+min-height: 140vh;
+
+}
+.information{
+  min-height: 140vh;
+}
   .footer{
     padding: 70px 0;
     background-color: rgba(52, 52, 52,0.8);
-   
+   flex:1;
   
   }
   ul{

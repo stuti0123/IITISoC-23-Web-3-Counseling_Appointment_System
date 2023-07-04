@@ -1,5 +1,8 @@
 import React from 'react';
-
+import Heading from './Heading'
+import About from './About';
+import FAQ from './FAQ';
+import Membersblock from './Membersblock';
 function Homepg() {
   return (
   
@@ -12,18 +15,8 @@ function Homepg() {
         minHeight:'100vh',
         opacity:0.6
        }}></div>
-
       <div className='name'>
-      <img style={{
-        position:'absolute',
-        top:1,
-        height:150,
-        width:150
-      }} src='./images/logo2.png' alt=""/>
-      <ul className='Institutename'>
-<li ><b>Indian Institute Of</b></li>
-<li><b>Technology Indore</b></li>
-      </ul>
+      <Heading/>
       <div class="button-container">
       <div style={{ position: 'relative' }}>
         <div>
@@ -32,8 +25,6 @@ function Homepg() {
         </div>
       </div>
 </div>
-     
-      <p style={{position:'absolute',left:450,top:50,padding:0,fontSize:55,fontWeight:500,fontStretch:'extra-expanded'}}>Counselling Services</p>
       </div>
       <div className="text-container">
         <p className='fade-in'>
@@ -44,7 +35,11 @@ IIT-Indore has a Student Counselling Centre in place that offers supportive and 
         </p>
         <br/>
         <button className='login-button'>LOG IN/SIGN UP</button>
+        
       </div>
+      <About/>
+        <Membersblock/>
+        <FAQ/>
     </div>
   
   );
