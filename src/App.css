@@ -116,7 +116,7 @@
   }
 }
 .fade-in {
-  animation: fadeIn 2s ease-in-out;
+  animation: fadeIn 1s ease-in-out;
 }
 @keyframes cloudMotion {
   0% {
@@ -295,6 +295,50 @@ h3 {
   }
 }
 
+.text-content{
+  margin-top: 200px; 
+  padding: 30px;
+  text-align: center;
+position: relative;
+top: 50px;
+padding-left: 80px;
+padding-right: 80px;
+  font-family: Arial, sans-serif;
+  color: #000000; 
+
+}
+.activities-head{
+font-size: 30px; 
+font-weight: bold; 
+text-decoration: underline;  
+font-family: "Helvetica Neue", Arial, sans-serif; 
+color: #333;  
+}
+.content {
+  margin-top: 0px;
+  padding: 0; 
+  background-image: url('C:\Users\HP\OneDrive\Documents\GitHub\IITISoC-23-Web-3-Counseling_Appointment_System\public\images\c11.jpg');
+
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  background-position: 2px;
+  background-size: cover;
+  position: relative;
+  top: 0px;  width: 100%;  
+  height: 80vh;    
+  
+}
+.content:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  opacity: 0.8; 
+  pointer-events: none;
+}
 
 .name{
   display:flex;
