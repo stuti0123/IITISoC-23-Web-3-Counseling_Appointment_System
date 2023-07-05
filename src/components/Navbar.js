@@ -11,7 +11,7 @@ function Navbar() {
     <li className="nav2" style={{fontSize:18,fontWeight:800}}>|</li>
     <li className="nav2"><a href="#team" >Our Team</a></li>
     <li className="nav2" style={{fontSize:18,fontWeight:800}}>|</li>
-    <li className="nav2"><NavLink exact to="/activities" >Activities</NavLink></li>
+    <li className="nav2"><NavLink exact to="/activities" target="_blank">Activities</NavLink></li>
     <li className="nav2" style={{fontSize:18,fontWeight:800}}>|</li>
     <li className="nav2"><NavLink exact to="/information" >Information</NavLink></li>
     <li className="nav2" style={{fontSize:18,fontWeight:800}}>|</li>
