@@ -69,7 +69,7 @@ import React, {useState} from 'react'
     {
       id:6,
       name:'Dr. Amit Shukla',
-      info:'Discipline of Astronomy, Astrophysics & Space Engineering',
+      info:'Discipline of Astronomy, Astrophysics & Space Engg.',
       email:'amit.shukla@iiti.ac.in',
       image:'./images/faculty6.jpg'
     },
