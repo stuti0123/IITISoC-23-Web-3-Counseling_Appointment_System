@@ -295,6 +295,67 @@ h3 {
   }
 }
 
+.activities-head, .info-head{
+  font-family: "Arial", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+.activities-text,.info-text{
+  font-family:"Helvetica Neue",Arial, sans-serif;
+  position: relative;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #111111;
+  top: 200px;
+  text-align: center;
+  z-index: 1;
+  padding: 60px;
+ }
+.info-container{
+  display: flex;  
+  flex-direction: column;
+  
+  align-items: center;
+}
+.activities-background-image{
+  position: absolute;  
+  top: 0;  
+  left: 0;  
+  width: 100%; 
+  height: 100%;  
+  z-index: 0;
+}
+.info-head{
+  width: 100%;  text-align: center;  
+  font-weight: bold;  margin-bottom: 20px; 
+}
+.subheading {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.paragraph {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  flex-grow: 1;
+  display: flex;
+  background-color: #eeeeeefc;
+  justify-content: center;
+}
+
+.note-parents, .note-faculty {
+  flex-basis: 50%;
+  padding-right: 0 10px;  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
 
 .name{
   display:flex;
@@ -316,9 +377,9 @@ height: 60px;
 position: absolute;
 top: 200px;
 max-width: fit-content;
-background-color:rgb(111,111,111);
+background-color:rgb(58, 58, 58);
 align-items: center;
-  filter: opacity(0.8);
+filter: opacity(0.8);
   }
   
 }
