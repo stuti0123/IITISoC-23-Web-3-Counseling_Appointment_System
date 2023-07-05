@@ -10,7 +10,7 @@
   list-style: none;
  position: absolute;
  font-size: 18px;
- font-weight: 800;
+ font-weight: 600;
  top:50px;
  left:170px;
   color: #010d52;
@@ -377,7 +377,7 @@ margin: 20px;
   }
 .activities{
 
-min-height: 140vh;
+min-height: 100vh;
 
 }
 .information{

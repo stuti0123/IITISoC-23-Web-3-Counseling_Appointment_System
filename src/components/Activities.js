@@ -2,7 +2,14 @@ import React from 'react'
 const Activities=()=>{
     return(
         <div className='activities'>
-<h1 style={{position:'relative',top:220,textAlign:'center'}}>Activities page</h1>
+<div className="activities-background-image" style={{
+        backgroundImage: `url('./images/c11.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'centre',
+        backgroundRepeat: 'no-repeat',
+        minHeight:'100vh',
+        opacity:0.6
+       }}></div>
 </div>
     )
 }
