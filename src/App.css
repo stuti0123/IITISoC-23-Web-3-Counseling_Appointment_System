@@ -100,10 +100,16 @@
   top: 35px;
   margin-left: 215px;
   padding: 12px;
-  background-color: #000;
+  background-color: #141313;
+  
   color: white;
   cursor: pointer;
 }
+.button-text {
+  color: rgb(255, 255, 255);
+}
+
+
 .login-button:hover{
   background-color: #383838;
 }

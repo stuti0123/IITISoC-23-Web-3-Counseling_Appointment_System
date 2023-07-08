@@ -65,8 +65,9 @@ function Homepg() {
         </p>
         <br />
         <button className="login-button" onClick={handleLoginClick}>
-         <Link to= "/login"> LOG IN/SIGN UP</Link>
-        </button>
+  <Link to="/login" className="button-text">LOG IN/SIGN UP</Link>
+</button>
+
       </div>
       <About />
       <Membersblock />

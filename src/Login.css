@@ -8,7 +8,7 @@
   
   .login-form {
     padding: 20px;
-    background-color: rgba(250, 185, 237, 0.7);
+    background-color:rgb(240, 189, 185) ;
     border-radius: 5px;
     text-align: center;
   }
@@ -26,7 +26,7 @@
   .login-form button {
     width: 100%;
     padding: 10px;
-    background-color: #feb886;
+    background-color: #101112;
     color: #fff;
     border: none;
     border-radius: 5px;
