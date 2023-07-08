@@ -5,6 +5,7 @@ import About from './About';
 import FAQ from './FAQ';
 import Membersblock from './Membersblock';
 import Login from './Login';
+import { Link } from 'react-router-dom';
 
 function Homepg() {
   const navigate = useNavigate();
@@ -64,7 +65,7 @@ function Homepg() {
         </p>
         <br />
         <button className="login-button" onClick={handleLoginClick}>
-          LOG IN/SIGN UP
+         <Link to= "/login"> LOG IN/SIGN UP</Link>
         </button>
       </div>
       <About />
