@@ -300,7 +300,9 @@ h3 {
     position: relative;
   }
 }
-
+.information{
+  min-height: 100vh;
+}
 .activities-head, .info-head{
   font-family: "Arial", sans-serif;
   font-size: 32px;
@@ -320,9 +322,8 @@ h3 {
   padding: 60px;
  }
 .info-container{
-  display: flex;  
-  flex-direction: column;
-  
+  display: flex;
+justify-content:space-evenly;
   align-items: center;
 }
 .activities-background-image{
@@ -351,18 +352,27 @@ h3 {
   font-size: 16px;
   line-height: 1.5;
   flex-grow: 1;
-  display: flex;
-  background-color: #eeeeeefc;
   justify-content: center;
 }
 
-.note-parents, .note-faculty {
-  flex-basis: 50%;
-  padding-right: 0 10px;  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
+.note-parents {
+background:transparent;
+box-shadow: 0px 2px 2px 2px;
+backdrop-filter: blur(20px);
+max-width: 600px;
+padding: 4px;
+border-radius: 7px;
+max-height: 700px;
 }
-
+.note-faculty{
+ max-width: 600px;
+  background-color:transparent;
+  box-shadow: 2px 2px 2px 2px;
+  backdrop-filter: blur(20px);
+  border-radius: 7px;
+  padding: 4px;
+  min-height: 420px;
+}
 .name{
   display:flex;
 }
@@ -447,9 +457,7 @@ margin: 20px;
 min-height: 100vh;
 
 }
-.information{
-  min-height: 140vh;
-}
+
   .footer{
     padding: 70px 0;
     background-color: rgba(52, 52, 52,0.8);
@@ -637,10 +645,6 @@ min-height: 100vh;
   }
   .faq table{
     border-spacing: 30px;
-  }
-  .faq tr td{
-   
-    width:500px ;
   }
   .tb-col-1{
     padding-right: 20px;
