@@ -5,10 +5,10 @@ const BookNowPage = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [date, setDate] = useState('');
+  const [time, setTime] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
 
     // Add your book now logic here
     // You can make an API request, save the booking data to the database, or perform any other necessary actions
@@ -16,42 +16,57 @@ const BookNowPage = () => {
     setName('');
     setEmail('');
     setDate('');
+    setTime('');
   };
 
   return (
     <div className="book-now-page">
       <h2>Book Now</h2>
       <form onSubmit={handleSubmit}>
-        <label>
-          Name:
+        <div className="form-group">
+          <label htmlFor="name">Name:</label>
           <input
             type="text"
+            id="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
           />
-        </label>
-        <label>
-          Email:
+        </div>
+        <div className="form-group">
+          <label htmlFor="email">Email:</label>
           <input
             type="email"
+            id="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
           />
-        </label>
-        <label>
-          Date:
+        </div>
+        <div className="form-group">
+          <label htmlFor="date">Date:</label>
           <input
             type="date"
+            id="date"
             value={date}
             onChange={(e) => setDate(e.target.value)}
             required
-          />  </label>
-          <button type="submit" className="motion-button">Book Now</button>
-        </form>
-      </div>
-    );
-  };
-  
-  export default BookNowPage;
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="time">Time:</label>
+          <input
+            type="time"
+            id="time"
+            value={time}
+            onChange={(e) => setTime(e.target.value)}
+            required
+          />
+        </div>
+        <button type="submit" >SUBMIT</button>
+      </form>
+    </div>
+  );
+};
+
+export default BookNowPage;
