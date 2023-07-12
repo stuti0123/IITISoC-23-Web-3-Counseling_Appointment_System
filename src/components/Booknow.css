@@ -23,7 +23,13 @@ margin-left: 500px;
 }
 
 .book-now-page {
+<<<<<<< HEAD
   width: 450px;
+=======
+  
+  max-width: 400px;
+  margin: 0 auto;
+>>>>>>> edbd396467241d06e4e6a35640a400044fd12eb3
   padding: 20px;
   background-color: rgb(253, 190, 181);
   z-index: 3;

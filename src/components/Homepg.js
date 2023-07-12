@@ -6,12 +6,10 @@ import FAQ from './FAQ';
 import Membersblock from './Membersblock';
 import Login from './Login';
 import { Link } from 'react-router-dom';
-import Booknow from './BookNowPage';
 
 function Homepg() {
   const navigate = useNavigate();
   const [showLogin, setShowLogin] = useState(false);
-  const [showBookNow, setShowBookNow] = useState(false);
 
   const handleLoginClick = () => {
     setShowLogin(true);
@@ -20,14 +18,6 @@ function Homepg() {
   const handleLoginClose = () => {
     setShowLogin(false);
   };
-  const handleBookNowClick = () => {
-    setShowBookNow(true);
-  };
-
-  const handleBookNowClose = () => {
-    setShowBookNow(false);
-  };
-
 
   const handleLoginSubmit = () => {
     // Perform any login logic or redirect to a different page after successful login
@@ -55,9 +45,7 @@ function Homepg() {
               <div className="cloud">
                 Book an appointment and talk with your counselor now!
               </div>
-              <button className="motion-button" onClick={handleBookNowClick}>
-  <Link to="/booknow" className="button-text">Book Now</Link>
-</button>
+              <button className="motion-button">Book Now</button>
             </div>
           </div>
         </div>
@@ -77,7 +65,7 @@ function Homepg() {
         </p>
         <br />
         <button className="login-button" onClick={handleLoginClick}>
-  <Link to="/login" className="button-text">STUDENT LOG IN</Link>
+  <Link to="/login" className="button-text">LOG IN/SIGN UP</Link>
 </button>
 
       </div>

@@ -3,15 +3,13 @@ import '../Login.css';
 
 
 const Login = ({ onClose }) => {
-  const [email,setEmail] = useState('');
+  const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
- 
-
 
   const handleLogin = (e) => {
     e.preventDefault();
     // Add your login logic here
-    console.log('Email:', email);
+    console.log('Username:', username);
     console.log('Password:', password);
   };
 
@@ -37,9 +35,9 @@ const Login = ({ onClose }) => {
         <h2>Login</h2>
         <input
           type="text"
-          placeholder="Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          placeholder="Username"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
         />
         <input
           type="password"
@@ -47,7 +45,7 @@ const Login = ({ onClose }) => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button type="submit">LOG IN</button>
+        <button type="submit">LOG IN/SIGN UP</button>
       </form>
     </div>
   );

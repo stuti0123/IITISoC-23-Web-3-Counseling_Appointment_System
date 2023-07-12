@@ -9,7 +9,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Activities from './components/Activities';
 import Information from './components/Information';
 import Login from './components/Login';
-import Booknow from './components/BookNowPage';
 function App() {
   return (
     <div className="App">
@@ -22,7 +21,6 @@ function App() {
           <Route exact path="/activities" element={<Activities />} />
           <Route exact path="/information" element={<Information />} />
           <Route exact path="/login" element={<Login />} />
-          <Route  exact path="/booknow" element={<Booknow/>} />
         </Routes>
       </Router>
       <Footer />
