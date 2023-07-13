@@ -20,7 +20,7 @@ const Login = ({ onClose }) => {
       background: `url('./images/c11.jpg') center/cover`,
       backgroundsize: 'cover',            backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
-     backdropFilter: 'blur(5px)',
+     backdropFilter: 'blur(5px)'
     }} >
       <div className='login-background' style={{
           position: 'absolute',
