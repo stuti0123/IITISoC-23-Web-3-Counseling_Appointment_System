@@ -1,39 +1,49 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Booknow.css';
 import Axios from 'axios';
 
 const BookNowPage = () => {
+  const [listOfUsers, setListOfUsers] = useState([]);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [date, setDate] = useState('');
   const [time, setTime] = useState('');
-  const [bookingMessage, setBookingMessage] = useState('');
+  const [bookingStatus, setBookingStatus] = useState('');
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    try {
-      const response = await Axios.post('http://localhost:5000/createUser', {
-        name,
-        email,
-        date,
-        time,
-      });
-
-      if (response.status === 200 || 201 ) {
-        setBookingMessage('You have successfully booked counselling services');
-      } else {
-        setBookingMessage('Your booking is unsuccessful. We are sorry for the inconvenience');
+  useEffect(() => {
+    const getUsers = async () => {
+      try {
+        const response = await Axios.get('http://localhost:5000/getUsers');
+        setListOfUsers(response.data);
+      } catch (error) {
+        console.log('Error fetching users:', error);
       }
-    } catch (error) {
-      console.error('Error creating user:', error);
-      setBookingMessage('Your booking is unsuccessful. We are sorry for the inconvenience');
-    }
+    };
 
-    setName('');
-    setEmail('');
-    setDate('');
-    setTime('');
+    getUsers();
+  }, []);
+
+  const createUser = () => {
+    const newUser = {
+      name,
+      email,
+      date,
+      time,
+    };
+
+    Axios.post('http://localhost:5000/createUser', newUser)
+      .then((response) => {
+        setListOfUsers([...listOfUsers, response.data]);
+        setName('');
+        setEmail('');
+        setDate('');
+        setTime('');
+        setBookingStatus('YOUR BOOKING IS SUCCESSFUL');
+      })
+      .catch((error) => {
+        console.log('Error creating user:', error);
+        setBookingStatus('YOUR BOOKING IS UNSUCCESSFUL. We are sorry for the inconvenience.');
+      });
   };
 
   return (
@@ -51,61 +61,53 @@ const BookNowPage = () => {
         }}
       ></div>
       <div className="book-now-page">
+        <div className="form-group">
+          
+        </div>
+
         <h2>Book Now</h2>
-        {bookingMessage && (
-          <p className={bookingMessage.includes('successfully') ? 'success-message' : 'error-message'}>
-            {bookingMessage}
-          </p>
-        )}
-        <form onSubmit={handleSubmit}>
-          <div className="form-group">
-            <label htmlFor="name">Name:</label>
-            <input
-              type="text"
-              placeholder="Enter your name"
-              id="name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              required
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="email">Email:</label>
-            <input
-              type="email"
-              placeholder="Enter your email"
-              id="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="date">Date:</label>
-            <input
-              type="date"
-              placeholder="Select a date"
-              id="date"
-              value={date}
-              onChange={(e) => setDate(e.target.value)}
-              required
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="time">Time:</label>
-            <input
-              type="time"
-              placeholder="Select a time"
-              id="time"
-              value={time}
-              onChange={(e) => setTime(e.target.value)}
-              required
-            />
-          </div>
-          <button className="submit-button" type="submit">
-            SUBMIT
-          </button>
-        </form>
+
+        <input
+          type="text"
+          placeholder="Enter your name"
+          id="name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          required
+        />
+
+        <input
+          type="email"
+          placeholder="Enter your email"
+          id="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+        />
+
+        <input
+          type="date"
+          placeholder="Select a date"
+          id="date"
+          value={date}
+          onChange={(e) => setDate(e.target.value)}
+          required
+        />
+
+        <input
+          type="time"
+          placeholder="Select a time"
+          id="time"
+          value={time}
+          onChange={(e) => setTime(e.target.value)}
+          required
+        />
+
+        <button className="submit-button" type="submit" onClick={createUser}>
+          SUBMIT
+        </button>
+
+        {bookingStatus && <p>{bookingStatus}</p>}
       </div>
     </div>
   );
