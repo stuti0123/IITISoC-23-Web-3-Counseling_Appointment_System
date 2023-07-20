@@ -4,7 +4,6 @@ import Heading from './Heading';
 import About from './About';
 import FAQ from './FAQ';
 import Membersblock from './Membersblock';
-import Login from './Login';
 import { Link } from 'react-router-dom';
 import Booknow from './BookNowPage';
 
@@ -76,16 +75,11 @@ function Homepg() {
           professional counsellor.
         </p>
         <br />
-        <button className="login-button" onClick={handleLoginClick}>
-  <Link to="/login" className="button-text">STUDENT LOG IN</Link>
-</button>
 
       </div>
       <About />
       <Membersblock />
       <FAQ />
-
-      {showLogin && <Login onClose={handleLoginClose} onSubmit={handleLoginSubmit} />}
     </div>
   );
 }

@@ -1,5 +1,4 @@
 import './App.css';
-import './Login.css';
 import Heading from './components/Heading';
 import Homepg from './components/Homepg';
 import Navbar from './components/Navbar';
@@ -8,25 +7,29 @@ import Footer from './components/Footer';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Activities from './components/Activities';
 import Information from './components/Information';
-import Login from './components/Login';
 import Booknow from './components/BookNowPage';
+import MayShowNavbar from './components/MayShowNavbar';
 
 function App() {
   return (
     <div className="App">
       <BackToTopButton />
-      <Heading />
       <Router>
+<MayShowNavbar>
+      <Heading />
         <Navbar />
+        </MayShowNavbar>
         <Routes>
           <Route exact path="/" element={<Homepg />} />
           <Route exact path="/activities" element={<Activities />} />
           <Route exact path="/information" element={<Information />} />
-          <Route exact path="/login" element={<Login />} />
           <Route  exact path="/booknow" element={<Booknow/>} />
         </Routes>
+        <MayShowNavbar>
+        <Footer />
+        </MayShowNavbar>
       </Router>
-      <Footer />
+     
     </div>
   );
 }

@@ -61,12 +61,12 @@ const BookNowPage = () => {
         }}
       ></div>
       <div className="book-now-page">
-        <div className="form-group">
-          
-        </div>
+       
+      
 
         <h2>Book Now</h2>
-
+        <div className="form-group">
+          <p>Name:</p>
         <input
           type="text"
           placeholder="Enter your name"
@@ -75,7 +75,7 @@ const BookNowPage = () => {
           onChange={(e) => setName(e.target.value)}
           required
         />
-
+<p>Email:</p>
         <input
           type="email"
           placeholder="Enter your email"
@@ -84,8 +84,8 @@ const BookNowPage = () => {
           onChange={(e) => setEmail(e.target.value)}
           required
         />
-
-        <input
+        <p>Date:</p>
+        <input 
           type="date"
           placeholder="Select a date"
           id="date"
@@ -93,7 +93,7 @@ const BookNowPage = () => {
           onChange={(e) => setDate(e.target.value)}
           required
         />
-
+        <p>Time:</p>
         <input
           type="time"
           placeholder="Select a time"
@@ -102,13 +102,14 @@ const BookNowPage = () => {
           onChange={(e) => setTime(e.target.value)}
           required
         />
-
+</div>
         <button className="submit-button" type="submit" onClick={createUser}>
           SUBMIT
         </button>
 
         {bookingStatus && <p>{bookingStatus}</p>}
-      </div>
+      
+    </div>
     </div>
   );
 };
