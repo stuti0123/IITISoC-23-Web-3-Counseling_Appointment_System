@@ -24,13 +24,22 @@ const BookNowPage = () => {
   }, []);
 
   const createUser = () => {
+  
+    const allowedDomains = ['iiti.ac.in'];
+    const isValidEmail = allowedDomains.some((domain) => email.endsWith('@' + domain));
+  
+    if (!isValidEmail) {
+      setBookingStatus('Invalid Email. Only institute email IDs are allowed for booking.');
+      return; 
+    }
+  
     const newUser = {
       name,
       email,
       date,
       time,
     };
-
+  
     Axios.post('http://localhost:5000/createUser', newUser)
       .then((response) => {
         setListOfUsers([...listOfUsers, response.data]);
@@ -45,6 +54,7 @@ const BookNowPage = () => {
         setBookingStatus('YOUR BOOKING IS UNSUCCESSFUL. We are sorry for the inconvenience.');
       });
   };
+  
 
   return (
     <div className="book-now-container">
@@ -62,8 +72,6 @@ const BookNowPage = () => {
       ></div>
       <div className="book-now-page">
        
-      
-
         <h2>Book Now</h2>
         <div className="form-group">
           <p>Name:</p>
@@ -103,11 +111,13 @@ const BookNowPage = () => {
           required
         />
 </div>
-        <button className="submit-button" type="submit" onClick={createUser}>
+        <button className="submit-button" style={{marginBottom:23}} type="submit" onClick={createUser}>
           SUBMIT
         </button>
 
-        {bookingStatus && <p>{bookingStatus}</p>}
+        {bookingStatus && (
+        <p style={{ color: '#540000', fontSize: '16px', marginTop: '5px',fontWeight:500,textAlign:'center' }}>{bookingStatus}</p>
+      )}
       
     </div>
     </div>

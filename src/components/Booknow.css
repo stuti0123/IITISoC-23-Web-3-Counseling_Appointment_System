@@ -86,7 +86,7 @@
   text-transform: uppercase;
   cursor: pointer;
   transition: background-color 0.3s;
-  margin-top: 20px;display: flex;  justify-content: center;margin-left: 115px;
+  display: flex;  justify-content: center;margin-left: 118px;
 }
 
 .submit-button:hover {
