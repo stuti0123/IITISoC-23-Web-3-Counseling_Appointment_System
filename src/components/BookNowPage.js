@@ -24,22 +24,13 @@ const BookNowPage = () => {
   }, []);
 
   const createUser = () => {
-  
-    const allowedDomains = ['iiti.ac.in'];
-    const isValidEmail = allowedDomains.some((domain) => email.endsWith('@' + domain));
-  
-    if (!isValidEmail) {
-      setBookingStatus('Invalid Email. Only institute email IDs are allowed for booking.');
-      return; 
-    }
-  
     const newUser = {
       name,
       email,
       date,
       time,
     };
-  
+
     Axios.post('http://localhost:5000/createUser', newUser)
       .then((response) => {
         setListOfUsers([...listOfUsers, response.data]);
@@ -54,8 +45,6 @@ const BookNowPage = () => {
         setBookingStatus('YOUR BOOKING IS UNSUCCESSFUL. We are sorry for the inconvenience.');
       });
   };
-  
-
   return (
     <div className="book-now-container">
       <div
