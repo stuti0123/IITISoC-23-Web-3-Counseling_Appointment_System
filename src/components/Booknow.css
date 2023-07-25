@@ -92,3 +92,21 @@
 .submit-button:hover {
   background-color: #a10404;
 }
+
+/* Assuming you have a class named "home-button" for the button */
+
+.home-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: rgb(20, 18, 18);
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background-color: #fb4242;
+}
+
