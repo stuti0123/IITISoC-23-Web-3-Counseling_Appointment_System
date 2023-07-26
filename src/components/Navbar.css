@@ -1,0 +1,94 @@
+/* Navbar.css */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Mukta:wght@300&family=Roboto+Condensed:wght@300;400&family=Tektur&display=swap');
+.navbar {
+    background-color: #243852;
+    color: #fff;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    flex: 1; /* Use flex property to distribute available space evenly */
+  justify-content: center;
+
+  }
+  
+  .navbar-logo {
+    font-size: 35px;
+    margin-right: 10px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: 3px; z-index: 5;
+  }
+  
+  .navbar-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    align-self: flex-end; /* Align the hamburger icon to the right */
+  }
+  
+  .toggle-icon {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    transition: transform 0.3s; /* Add a transition for the rotation */
+  }
+  
+  /* Rotate the toggle icon upon clicking */
+  .rotate {
+    transform: rotate(180deg);
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .navbar-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .navbar-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Styles for small screens (hamburger menu) */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-end; /* Align the content to the right in hamburger mode */
+    }
+  
+    .navbar-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #243852;
+      width: 100%;
+      padding: 10px;
+      z-index: 4;
+    }
+  
+    .navbar-links.open {
+      display: flex;
+      align-items: flex-end;
+    }
+  
+    .navbar-toggle {
+      display: block;
+    }
+  }
+  

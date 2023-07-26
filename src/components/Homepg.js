@@ -42,12 +42,13 @@ function Homepg() {
           backgroundRepeat: 'no-repeat',
           minHeight: '100vh',
           opacity: 0.6,
+          zIndex:'2'
         }}
       ></div>
       <div className="name">
         <Heading />
         <div className="button-container">
-          <div style={{ position: 'relative' }}>
+          <div className="bigger" style={{ position: 'relative' }}>
             <div>
               <div className="cloud">Book an appointment and talk with your counselor now!</div>
               <button className="motion-button" onClick={handleBookNowClick}>
@@ -59,7 +60,7 @@ function Homepg() {
           </div>
         </div>
       </div>
-      <div className="text-container">
+      <div className="textcontainer">
         <p className="fade-in">
           Counselling is a helping process which aims to facilitate the process of growth and well-being. It empowers
           students with enhanced ability to solve problems, make decisions and deal more effectively with their concerns.
@@ -70,6 +71,9 @@ function Homepg() {
           counsellor.
         </p>
         <br />
+        <div className='helpline'>
+        <a href="https://mail.google.com/a/iiti.ac.in">IITI Helpline Desk</a>
+        </div>
       </div>
       <About />
       <Membersblock />

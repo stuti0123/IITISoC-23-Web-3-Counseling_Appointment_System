@@ -2,7 +2,7 @@ import React from 'react'
 const Information=()=>{
     return(
         <div className='information'>
-        <div className="activities-background-image" style={{
+        <div className="info-background-image" style={{
         backgroundImage: `url('./images/c11.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'centre',
@@ -11,8 +11,9 @@ const Information=()=>{
         opacity:0.6, filter:'blur(5px)',
         }}></div>
        <div className='info-text'>
-<h1 className='info-head'>Information</h1>
+
 <div className='Info-container'>
+<h1 className='info-head'>Information</h1>
 <div className="note-parents">
     <h2 className="subheading">Note for Parents</h2>
     <p className="paragraph">It is natural for parents to feel anxious and concerned when their wards leave home for education. Young people, though away from home, still require parents’ continuous involvement, guidance and monitoring. Parents need to be aware of their wards’ overall functioning both academic and non-academic. It is also advisable for parents to seek feedback from the faculty advisors, teachers and/or counsellor. Parents can approach the counsellor for concerns related to their wards. Parents’ feedback to the counsellor facilitates the counselling process and enables the parents and counsellor to work together to optimize the potential of the young person.</p>

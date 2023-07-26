@@ -1,28 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
+import './Navbar.css';
 import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
-function Navbar() {
-  return (
-    <nav className='navbar'>
-<ul className='nav1'>
-    <li className="nav2"><img style={{height:25,position:'relative',left:-5}} src='./images/homee.png' alt=""/><Link to='/' style={{position:'relative',top:-7}} >Home</Link></li>
-    <li className="nav2" style={{fontSize:18,fontWeight:800}}>|</li>
-    <li  className="nav2"><a href="#about" >About</a></li>
-    <li className="nav2" style={{fontSize:18,fontWeight:800}}>|</li>
-    <li className="nav2"><a href="#team" >Our Team</a></li>
-    <li className="nav2" style={{fontSize:18,fontWeight:800}}>|</li>
-    <li className="nav2"><NavLink exact to="/activities">Activities</NavLink></li>
-    <li className="nav2" style={{fontSize:18,fontWeight:800}}>|</li>
-    <li className="nav2"><NavLink exact to="/information" >Information</NavLink></li>
-    <li className="nav2" style={{fontSize:18,fontWeight:800}}>|</li>
-    <li className="nav2"><a href="#contact-details">Contact Us</a></li>
-    <li className="nav2" style={{fontSize:18,fontWeight:800}}>|</li>
-    <li className="nav2"><a href="#FAQ" >FAQ's</a></li>
-    <li className="nav2" style={{fontSize:18,fontWeight:800}}>|</li>
-    <li className="nav2" ><img id="mail1"style={{position:'relative',top:-3}} src='./images/email.png' alt=""/></li>
-   </ul>
-    </nav>
-  )
-}
 
-export default Navbar
+const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleMenuToggle = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+  const handleLinkClick = () => {
+    setIsMenuOpen(false); // Close the hamburger dropdown menu when a link is clicked
+  };
+
+  return (
+    <nav className={`navbar ${isMenuOpen ? 'open' : ''}`}>
+      <div className="navbar-brand">
+        <span className="navbar-logo">IITI Counselling Services</span>
+        <button className={`navbar-toggle ${isMenuOpen ? 'open' : ''}`} onClick={handleMenuToggle}>
+          <span className={`toggle-icon ${isMenuOpen ? 'rotate' : ''}`}></span>
+          <span className={`toggle-icon ${isMenuOpen ? 'rotate' : ''}`}></span>
+          <span className={`toggle-icon ${isMenuOpen ? 'rotate' : ''}`}></span>
+        </button>
+      </div>
+      <div className={`navbar-links ${isMenuOpen ? 'open' : ''}`}>
+        <Link to= '/' onClick={handleLinkClick}>Home</Link>
+        <a href="#about" onClick={handleLinkClick}>About</a>
+        <a href="#team" onClick={handleLinkClick}>Our Team</a>
+        <NavLink exact to= "/activities" onClick={handleLinkClick}>Activities</NavLink>
+        <NavLink exact to= "/information" onClick={handleLinkClick}>Information</NavLink>
+        <a href="#FAQ" onClick={handleLinkClick}>FAQ's</a>
+        <a href="#contact-details" onClick={handleLinkClick}>Contact Us</a>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;
